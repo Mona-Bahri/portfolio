@@ -43,3 +43,23 @@ body {
   color: var(--accent-color);
   background-color: var(--primery-color);
 }
+.Ellipse {
+  position: fixed;
+  margin-top: 26px;
+  margin-left: 765px;
+  width: 275px;
+  height: 271.57px;
+  background: linear-gradient(180deg, #eebbc3 0%, rgba(176, 162, 164, 0) 100%);
+  filter: blur(200px);
+  transform: rotate(-106.13deg);
+}
+.Ellipse-two {
+  position: fixed;
+  margin-top: -670px;
+  margin-left: 820px;
+  width: 199.24px;
+  height: 200.12px;
+  background: linear-gradient(180deg, #e1803a 0%, rgba(176, 162, 164, 0) 100%);
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
