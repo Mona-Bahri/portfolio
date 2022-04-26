@@ -63,3 +63,63 @@ body {
   filter: blur(200px);
   transform: rotate(-175.74deg);
 }
+.about-me {
+  margin-top: 300px;
+}
+.about-line {
+  background-color: var(--secondery-color);
+  height: 2px;
+  width: 380px;
+}
+.about-me p {
+  font-family: var(--secondery-font);
+  text-transform: uppercase;
+  color: var(--secondery-color);
+  margin-top: -18px;
+  margin-left: 399px;
+  font-size: 22px;
+}
+.about-me .col-5 {
+  font-family: var(--secondery-font);
+  color: var(--primery-color);
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.about-me .col-7 {
+  font-size: 20px;
+  color: var(--secondery-color);
+}
+.about-me .row {
+  margin-top: 100px;
+}
+.about-me-link {
+  margin-top: 18px;
+  color: var(--secondery-color);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+  display: block;
+}
+.about-me-link:hover {
+  color: var(--secondery-color);
+}
+.projects {
+  margin-top: 250px;
+}
+.projects-line {
+  background-color: var(--secondery-color);
+  height: 2px;
+  width: 380px;
+}
+.projects p {
+  font-family: var(--secondery-font);
+  text-transform: uppercase;
+  color: var(--secondery-color);
+  font-size: 22px;
+  margin-top: -13px;
+  margin-right: 19px;
+}
+.scroll-down {
+  margin-top: 85px;
+  text-align: center;
+}
