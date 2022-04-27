@@ -139,3 +139,50 @@ body {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+@media (max-width: 576px) {
+  .main {
+    padding: 188px 18px;
+    text-align: center;
+  }
+  .main h1 {
+    font-size: 40px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+  }
+  .main p {
+    font-size: 20px;
+  }
+  .about-line {
+    width: 170px;
+  }
+  .about-me p {
+    margin-top: -13px;
+    margin-left: 188px;
+    font-size: 16px;
+  }
+  .about-me .col-5 {
+    font-size: 25px;
+  }
+  .about-me .col-7 {
+    font-size: 15px;
+  }
+  .about-me-link {
+    font-size: 15px;
+  }
+  .projects {
+    margin-bottom: 160px;
+    margin-top: 64px;
+  }
+  .projects-line {
+    width: 160px;
+  }
+  .projects p {
+    font-size: 16px;
+    margin-top: -10px;
+  }
+  .item {
+    padding: 0.5rem;
+  }
+}
