@@ -10,6 +10,7 @@ body {
   background-color: var(--accent-color);
   font-family: var(--main-font);
 }
+/*#region main*/
 .main {
   padding: 200px 120px;
   text-align: left;
@@ -63,6 +64,9 @@ body {
   filter: blur(200px);
   transform: rotate(-175.74deg);
 }
+/*#endregion main*/
+/*#region about me*/
+
 .about-me {
   margin-top: 150px;
 }
@@ -103,6 +107,8 @@ body {
 .about-me-link:hover {
   color: var(--secondery-color);
 }
+/*#endregion about me*/
+/*#region projects*/
 .projects {
   margin-top: 150px;
   margin-bottom: 230px;
@@ -127,7 +133,9 @@ body {
 }
 
 .item {
-  padding: var(--_spacer);
+  position: relative;
+  overflow: hidden;
+  padding: 0.5rem;
   background-color: #b8c1ec0e;
   border-radius: 2px;
   box-shadow: 5px 8px;
@@ -139,6 +147,27 @@ body {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+.item > .content {
+  position: absolute;
+  inset: 0;
+  padding: var(--_spacer);
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item > img,
+.item > .content {
+  transition: 200ms ease-in-out;
+}
+.item > .content.fade {
+  opacity: 1;
+}
+.item:hover > .content.fade {
+  opacity: 0;
+}
+
+/*#endregion projects*/
 @media (max-width: 576px) {
   .main {
     padding: 188px 18px;
