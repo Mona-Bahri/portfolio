@@ -220,4 +220,7 @@ body {
   .item h3 {
     font-size: 15px;
   }
+  .projects-images {
+    gap: 0px;
+  }
 }
