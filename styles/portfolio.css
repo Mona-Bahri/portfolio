@@ -72,23 +72,23 @@ body {
   transform: rotate(-175.74deg);
 }
 /*#endregion bakground Gradient*/
-/*#region main*/
-.main {
+/*#region Hero*/
+.hero {
   padding: 200px 120px;
   text-align: left;
   line-height: 2px;
 }
-.main h1 {
+.hero h1 {
   color: var(--main-color);
   font-family: var(--secondery-font);
   font-size: 80px;
 }
-.main h2 {
+.hero h2 {
   font-size: 50px;
   color: var(--secondery-color);
   font-family: var(--secondery-font);
 }
-.main p {
+.hero p {
   font-size: 36px;
   font-weight: bold;
   color: var(--secondery-color);
@@ -212,21 +212,24 @@ body {
 .projects-images a {
   color: var(--accent-color);
 }
+.content h3 {
+  line-height: 45px;
+}
 
 /*#endregion projects*/
 @media (max-width: 576px) {
-  .main {
+  .hero {
     padding: 188px 18px;
     text-align: center;
   }
-  .main h1 {
+  .hero h1 {
     font-size: 40px;
   }
 
-  .main h2 {
+  .hero h2 {
     font-size: 30px;
   }
-  .main p {
+  .hero p {
     font-size: 20px;
   }
   .about-line {
