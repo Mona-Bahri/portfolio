@@ -166,6 +166,9 @@ body {
 .item:hover > .content.fade {
   opacity: 0;
 }
+.projects-images a {
+  color: var(--accent-color);
+}
 
 /*#endregion projects*/
 @media (max-width: 576px) {
@@ -213,5 +216,8 @@ body {
   }
   .item {
     padding: 0.5rem;
+  }
+  .item h3 {
+    font-size: 15px;
   }
 }
