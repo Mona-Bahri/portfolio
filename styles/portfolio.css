@@ -10,6 +10,68 @@ body {
   background-color: var(--accent-color);
   font-family: var(--main-font);
 }
+/*#region bakground Gradient*/
+.Ellipse {
+  position: fixed;
+  margin-top: 26px;
+  margin-left: 765px;
+  width: 275px;
+  height: 271.57px;
+  background: linear-gradient(180deg, #f19fab 0%, rgba(176, 162, 164, 0) 100%);
+  filter: blur(200px);
+  transform: rotate(-106.13deg);
+}
+.Ellipse-two {
+  position: fixed;
+  margin-top: -493px px;
+  margin-left: 828px;
+  width: 199.24px;
+  height: 200.12px;
+  background: #9c6192;
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
+.Ellipse-three {
+  position: fixed;
+  margin-top: -493px;
+  margin-left: 828px;
+  width: 199.24px;
+  height: 200.12px;
+  background: #9c6192;
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
+.Ellipse-four {
+  position: fixed;
+  margin-top: -493px;
+  margin-left: 828px;
+  width: 199.24px;
+  height: 200.12px;
+  background: #c3627f;
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
+.Ellipse-five {
+  position: fixed;
+  margin-top: -493px;
+  margin-left: 828px;
+  width: 199.24px;
+  height: 200.12px;
+  background: #ff8e68;
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
+.Ellipse-six {
+  position: fixed;
+  margin-top: -493px;
+  margin-left: 828px;
+  width: 199.24px;
+  height: 200.12px;
+  background: #f2646b;
+  filter: blur(200px);
+  transform: rotate(-175.74deg);
+}
+/*#endregion bakground Gradient*/
 /*#region main*/
 .main {
   padding: 200px 120px;
@@ -44,26 +106,7 @@ body {
   color: var(--accent-color);
   background-color: var(--primery-color);
 }
-.Ellipse {
-  position: fixed;
-  margin-top: 26px;
-  margin-left: 765px;
-  width: 275px;
-  height: 271.57px;
-  background: linear-gradient(180deg, #f19fab 0%, rgba(176, 162, 164, 0) 100%);
-  filter: blur(200px);
-  transform: rotate(-106.13deg);
-}
-.Ellipse-two {
-  position: fixed;
-  margin-top: -493px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: linear-gradient(180deg, #e0772c 0%, rgba(176, 162, 164, 0) 100%);
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
-}
+
 /*#endregion main*/
 /*#region about me*/
 
