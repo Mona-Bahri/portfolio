@@ -207,7 +207,10 @@ body {
   opacity: 1;
 }
 .item:hover > .content.fade {
-  opacity: 0;
+  opacity: 0.6;
+}
+.gray {
+  filter: grayscale(100%);
 }
 .projects-images a {
   color: var(--accent-color);
