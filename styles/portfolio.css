@@ -220,6 +220,39 @@ body {
 }
 
 /*#endregion projects*/
+
+/*region about me*/
+.about-me-section {
+  padding: 60px;
+}
+.about-me-section h1 {
+  color: var(--secondery-color);
+  font-family: var(--secondery-font);
+  font-size: 48px;
+  text-align: center;
+}
+.about-me-section p {
+  color: var(--secondery-color);
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+}
+.contact-button {
+  border: solid 2px var(--primery-color);
+  color: var(--primery-color);
+  padding: 10px 40px;
+  font-family: var(--main-font);
+  font-size: 20px;
+  transition: ease-in-out 0.5s;
+}
+.contact-button:hover {
+  color: var(--accent-color);
+  background-color: var(--primery-color);
+}
+.profile-img {
+  text-align: center;
+}
+/*endregion about me*/
 @media (max-width: 576px) {
   .hero {
     padding: 188px 18px;
@@ -271,5 +304,18 @@ body {
   }
   .projects-images {
     gap: 0px;
+  }
+  .about-me-section h1 {
+    font-size: 38px;
+  }
+  .about-me-section p {
+    font-size: 18px;
+  }
+  .about-me-section img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+  .profile-img {
+    padding: 25px;
   }
 }
