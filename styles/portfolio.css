@@ -393,6 +393,21 @@ body {
     padding: 0 15px;
     margin-top: 0px;
   }
+  .contect-container h3 {
+    margin: 80px 0px;
+    font-size: 28px;
+    padding: 0;
+    margin-left: -55px;
+  }
+  .contact-information {
+    padding: 10px;
+    line-height: 2rem;
+    font-size: 22px;
+    margin-top: -134px;
+  }
+  .contact-line {
+    height: 140px;
+  }
 }
 @media (max-width: 991px) {
   .content {
