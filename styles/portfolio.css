@@ -222,13 +222,13 @@ body {
 /*#endregion projects*/
 
 /*#region about me*/
-.contect-container h1 {
+.content-container h1 {
   color: var(--secondery-color);
   font-family: var(--secondery-font);
   font-size: 48px;
   text-align: center;
 }
-.project-container p {
+.content p {
   color: var(--main-color);
   font-size: 24px;
   text-align: center;
@@ -254,21 +254,21 @@ body {
 .container-fluid {
   width: 100%;
 }
-.contect {
+.project-container {
   padding: 50px;
 }
-.contect h1 {
+.project-container h1 {
   color: var(--secondery-color);
   font-size: 36px;
 }
-.contect h3 {
+.project-container h3 {
   color: var(--accent-color);
   font-size: 32px;
   font-weight: bold;
   font-family: var(--secondery-font);
   text-align: center;
 }
-.contect p {
+.project-container p {
   color: var(--accent-color);
   font-size: 24px;
   padding: 15px 5px;
@@ -286,10 +286,36 @@ body {
 .lunch-button:hover {
   color: var(--secondery-color);
 }
-.project-container {
+.content {
   padding: 50px;
 }
 /*#endregion about me*/
+
+/*#region contact-page*/
+.contect-container h3 {
+  padding: 110px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+.contact-line {
+  width: 3px;
+  height: 200px;
+  background-color: var(--primery-color);
+}
+.contact-information {
+  padding: 20px;
+
+  margin-top: -212px;
+  line-height: 3rem;
+  font-size: 36px;
+}
+.contact-information a {
+  color: var(--secondery-color);
+  text-decoration: none;
+}
+/*#endregion*/
+
 @media (max-width: 576px) {
   .hero {
     padding: 188px 18px;
@@ -342,10 +368,10 @@ body {
   .projects-images {
     gap: 0px;
   }
-  .contect-container h1 {
+  .content-container h1 {
     font-size: 38px;
   }
-  .contect-container p {
+  .content-container p {
     font-size: 18px;
   }
   .profile-img img {
@@ -356,20 +382,24 @@ body {
     padding: 50px;
     margin-top: 0;
   }
-  .project-container {
+  .content {
     position: relative;
     margin-top: 0px;
   }
-  .contect h1 {
+  .project-container h1 {
     font-size: 24px;
+  }
+  .project-container {
+    padding: 0 15px;
+    margin-top: 0px;
   }
 }
 @media (max-width: 991px) {
-  .project-container {
+  .content {
     padding: 0 15px;
     margin-top: 60px;
   }
-  .contect {
+  .project-container {
     padding: 10px 30px;
   }
 }
