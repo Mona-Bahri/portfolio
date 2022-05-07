@@ -221,17 +221,14 @@ body {
 
 /*#endregion projects*/
 
-/*region about me*/
-.about-me-section {
-  padding: 60px;
-}
-.about-me-section h1 {
+/*#region about me*/
+.contect-container h1 {
   color: var(--secondery-color);
   font-family: var(--secondery-font);
   font-size: 48px;
   text-align: center;
 }
-.about-me-section p {
+.contect-container p {
   color: var(--secondery-color);
   font-size: 24px;
   text-align: center;
@@ -250,9 +247,49 @@ body {
   background-color: var(--primery-color);
 }
 .profile-img {
+  padding: 0px 80px;
+  text-align: center;
+  margin-top: 150px;
+}
+.container-fluid {
+  width: 100%;
+}
+.contect {
+  padding: 50px;
+}
+.contect h1 {
+  color: var(--secondery-color);
+  font-size: 36px;
+}
+.contect h3 {
+  color: var(--accent-color);
+  font-size: 32px;
+  font-weight: bold;
+  font-family: var(--secondery-font);
   text-align: center;
 }
-/*endregion about me*/
+.contect p {
+  color: var(--accent-color);
+  font-size: 24px;
+  padding: 15px 5px;
+}
+.card-img {
+  padding: 35px 35px 0px;
+}
+.lunch-button {
+  background-color: var(--accent-color);
+  color: var(--secondery-color);
+  padding: 10px 40px;
+  font-family: var(--main-font);
+  font-size: 20px;
+}
+.lunch-button:hover {
+  color: var(--secondery-color);
+}
+.project-container {
+  padding: 50px;
+}
+/*#endregion about me*/
 @media (max-width: 576px) {
   .hero {
     padding: 188px 18px;
@@ -305,17 +342,34 @@ body {
   .projects-images {
     gap: 0px;
   }
-  .about-me-section h1 {
+  .contect-container h1 {
     font-size: 38px;
   }
-  .about-me-section p {
+  .contect-container p {
     font-size: 18px;
   }
-  .about-me-section img {
+  .profile-img img {
     border-radius: 50%;
     aspect-ratio: 1/1;
   }
   .profile-img {
-    padding: 25px;
+    padding: 50px;
+    margin-top: 0;
+  }
+  .project-container {
+    position: relative;
+    margin-top: 0px;
+  }
+  .contect h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .project-container {
+    padding: 0 15px;
+    margin-top: 60px;
+  }
+  .contect {
+    padding: 10px 30px;
   }
 }
