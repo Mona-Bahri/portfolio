@@ -228,8 +228,8 @@ body {
   font-size: 48px;
   text-align: center;
 }
-.contect-container p {
-  color: var(--secondery-color);
+.project-container p {
+  color: var(--main-color);
   font-size: 24px;
   text-align: center;
   font-weight: normal;
