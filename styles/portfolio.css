@@ -13,6 +13,14 @@ body {
 .hide-body {
   overflow: hidden;
 }
+.image-content {
+  display: flex;
+  justify-content: end;
+  margin-top: -50px;
+}
+.image-content img {
+  width: 550px;
+}
 
 /*#region navigation*/
 #togglebtn {
@@ -55,6 +63,7 @@ body {
 }
 
 #menu-overlay {
+  font-family: var(--secondery-font);
   position: fixed;
   top: 0;
   right: 0;
@@ -92,7 +101,7 @@ body {
 /*#endregion*/
 /*#region Hero*/
 .hero {
-  padding: 200px 120px;
+  padding: 140px 120px;
   text-align: left;
   line-height: 2px;
 }
@@ -129,7 +138,7 @@ body {
 /*#region about me*/
 
 .about-me {
-  margin-top: 150px;
+  margin-top: 20px;
 }
 .about-line {
   background-color: var(--secondery-color);
@@ -440,6 +449,10 @@ body {
   }
 }
 @media (max-width: 991px) {
+  .image-content {
+    justify-content: center;
+    margin: 15px;
+  }
   #menu-overlay ul {
     padding: 0;
   }
