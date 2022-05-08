@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>About me and my projects</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,20 @@
     ></script>
   </head>
   <body>
+    <div>
+      <a href="javascript:;" id="togglebtn">
+        <span></span>
+        <span></span>
+      </a>
+      <div id="menu-overlay">
+        <ul>
+          <li><a href="/" title="HomePage">Home</a></li>
+          <li><a href="/work.html" title="About me">About</a></li>
+          <li><a href="/work.html" title="My Work">Work</a></li>
+          <li><a href="/contact.html" title="Contact me">Contact</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="container-fluid content-container">
       <div class="row">
         <div class="col-sm-6 h-100 fixed-top content">
@@ -49,7 +63,7 @@
         </div>
         <div class="col-sm-6 offset-0 offset-sm-6 project-container">
           <h1 class="mt-5 mb-3">Take a look at what I've been working on!</h1>
-          <div class="card mb-5">
+          <div class="card mb-5" id="weather-project">
             <img
               src="images/Weather-App2.png"
               alt=""
@@ -68,7 +82,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-5">
+          <div class="card mb-5" id="divine-comedy">
             <img
               src="images/Divine-Comedy2.png"
               alt=""
@@ -87,7 +101,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-5">
+          <div class="card mb-5" id="dictionary-app">
             <img
               src="images/coming-soon.jpg"
               alt=""
@@ -106,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-5">
+          <div class="card mb-5" id="coffe">
             <img
               src="images/coming-soon.jpg"
               alt=""
