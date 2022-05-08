@@ -21,7 +21,35 @@ body {
 .image-content img {
   width: 550px;
 }
-
+footer {
+  background-color: var(--main-color);
+  padding: 40px;
+}
+footer .contact-box {
+  text-align: center;
+}
+footer .contact-box h4 {
+  font-size: 34px;
+  color: var(--accent-color);
+}
+footer .contact-box a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #21252985;
+}
+footer .contact-box a:hover {
+  color: var(--accent-color);
+}
+.social-media {
+  font-size: 28px;
+}
+.social-media a {
+  margin: 40px;
+  color: var(--accent-color);
+}
+.social-media a:hover {
+  color: #ee6c4d;
+}
 /*#region navigation*/
 #togglebtn {
   position: absolute;
