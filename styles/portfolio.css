@@ -10,68 +10,86 @@ body {
   background-color: var(--accent-color);
   font-family: var(--main-font);
 }
-/*#region bakground Gradient*/
-.Ellipse {
-  position: fixed;
-  margin-top: 26px;
-  margin-left: 765px;
-  width: 275px;
-  height: 271.57px;
-  background: linear-gradient(180deg, #f19fab 0%, rgba(176, 162, 164, 0) 100%);
-  filter: blur(200px);
-  transform: rotate(-106.13deg);
+.hide-body {
+  overflow: hidden;
 }
-.Ellipse-two {
-  position: fixed;
-  margin-top: -493px px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: #9c6192;
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
+
+/*#region navigation*/
+#togglebtn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  z-index: 2;
+  display: flex;
+  width: 20px;
+  height: 20px;
 }
-.Ellipse-three {
-  position: fixed;
-  margin-top: -493px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: #9c6192;
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
+#togglebtn span {
+  width: 35px;
+  height: 2px;
+  background-color: #eebbc3;
+  position: absolute;
+  display: flex;
+  transition: 0.3s;
 }
-.Ellipse-four {
-  position: fixed;
-  margin-top: -493px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: #c3627f;
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
+#togglebtn span:nth-child(1) {
+  top: 20%;
 }
-.Ellipse-five {
-  position: fixed;
-  margin-top: -493px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: #ff8e68;
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
+#togglebtn span:nth-child(2) {
+  top: 80%;
 }
-.Ellipse-six {
-  position: fixed;
-  margin-top: -493px;
-  margin-left: 828px;
-  width: 199.24px;
-  height: 200.12px;
-  background: #f2646b;
-  filter: blur(200px);
-  transform: rotate(-175.74deg);
+#togglebtn.is-active span {
+  background: #eebbc3;
 }
-/*#endregion bakground Gradient*/
+#togglebtn.is-active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+#togglebtn.is-active span:nth-child(2) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+#menu-overlay.is-active {
+  visibility: visible;
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #8c98d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.5s;
+}
+#menu-overlay ul {
+  position: relative;
+}
+#menu-overlay ul li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+}
+#menu-overlay ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 45px;
+  padding: 0px 10px;
+  color: var(--secondery-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+#menu-overlay ul li a:hover {
+  color: var(--accent-color);
+}
+/*#endregion*/
 /*#region Hero*/
 .hero {
   padding: 200px 120px;
@@ -190,7 +208,7 @@ body {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
-.item > .content {
+.item > .project-name {
   position: absolute;
   inset: 0;
   padding: var(--_spacer);
@@ -200,13 +218,13 @@ body {
   align-items: center;
 }
 .item > img,
-.item > .content {
+.item > .project-name {
   transition: 200ms ease-in-out;
 }
-.item > .content.fade {
+.item > .project-name.fade {
   opacity: 1;
 }
-.item:hover > .content.fade {
+.item:hover > .project-name.fade {
   opacity: 0.6;
 }
 .gray {
@@ -215,7 +233,7 @@ body {
 .projects-images a {
   color: var(--accent-color);
 }
-.content h3 {
+.project-name h3 {
   line-height: 45px;
 }
 
@@ -317,6 +335,18 @@ body {
 /*#endregion*/
 
 @media (max-width: 576px) {
+  .project-name h3 {
+    line-height: 18px;
+  }
+  #menu-overlay ul {
+    padding: 0;
+  }
+  #menu-overlay ul li a {
+    font-size: 45px;
+  }
+  #menu-overlay ul li {
+    display: block;
+  }
   .hero {
     padding: 188px 18px;
     text-align: center;
@@ -410,6 +440,12 @@ body {
   }
 }
 @media (max-width: 991px) {
+  #menu-overlay ul {
+    padding: 0;
+  }
+  #menu-overlay ul li {
+    display: block;
+  }
   .content {
     padding: 0 15px;
     margin-top: 60px;
