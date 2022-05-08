@@ -53,6 +53,19 @@ footer .contact-box a:hover {
 .Project-img-container {
   margin-bottom: 150px;
 }
+.gitLink {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #121629;
+}
+.gitLink a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.gitLink a:hover {
+  color: #ee6c4d;
+}
 /*#region navigation*/
 #togglebtn {
   position: absolute;
