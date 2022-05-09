@@ -265,55 +265,6 @@ footer .contact-box a:hover {
   margin-top: -13px;
   margin-right: 19px;
 }
-.projects-images {
-  --_spacer: 1rem;
-  gap: var(--_spacer);
-  padding: 0 var(--_spacer) var(--_spacer);
-}
-
-.item {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5rem;
-  background-color: #b8c1ec0e;
-  border-radius: 2px;
-  box-shadow: 5px 8px;
-  display: grid;
-  gap: var(--_spacer);
-}
-.projects-img > img {
-  inline-size: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-.item > .project-name {
-  position: absolute;
-  inset: 0;
-  padding: var(--_spacer);
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.item > img,
-.item > .project-name {
-  transition: 200ms ease-in-out;
-}
-.item > .project-name.fade {
-  opacity: 1;
-}
-.item:hover > .project-name.fade {
-  opacity: 0.6;
-}
-.gray {
-  filter: grayscale(100%);
-}
-.projects-images a {
-  color: var(--accent-color);
-}
-.project-name h3 {
-  line-height: 45px;
-}
 
 /*#endregion projects*/
 
@@ -343,9 +294,7 @@ footer .contact-box a:hover {
   background-color: var(--primery-color);
 }
 .profile-img {
-  padding: 0px 80px;
   text-align: center;
-  margin-top: 150px;
 }
 .container-fluid {
   width: 100%;
@@ -386,6 +335,21 @@ footer .contact-box a:hover {
 .content {
   padding: 50px;
 }
+.about-me-container p {
+  color: var(--main-color);
+  font-size: 24px;
+}
+.about-me-container {
+  padding: 60px;
+  margin: 124px 0px;
+}
+
+.about-me-container h4 {
+  color: var(--primery-color);
+  font-size: 48px;
+  font-family: var(--secondery-font);
+}
+
 /*#endregion about me*/
 
 /*#region contact-page*/

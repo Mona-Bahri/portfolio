@@ -7,5 +7,6 @@ document.querySelector("#togglebtn").onclick = function (event) {
 
   var body = document.querySelector("body");
   body.classList.toggle("hide-body");
+
   event.preventDefault();
 };
