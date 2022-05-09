@@ -364,9 +364,6 @@ footer .contact-box a:hover {
   #menu-overlay ul {
     padding: 0;
   }
-  #menu-overlay ul li a {
-    font-size: 45px;
-  }
   #menu-overlay ul li {
     display: inline;
   }
