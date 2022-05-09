@@ -67,80 +67,35 @@ footer .contact-box a:hover {
   color: #ee6c4d;
 }
 /*#region navigation*/
-#togglebtn {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  z-index: 2;
-  display: flex;
-  width: 20px;
-  height: 20px;
-}
-#togglebtn span {
-  width: 35px;
-  height: 2px;
-  background-color: #eebbc3;
-  position: absolute;
-  display: flex;
-  transition: 0.3s;
-}
-#togglebtn span:nth-child(1) {
-  top: 20%;
-}
-#togglebtn span:nth-child(2) {
-  top: 80%;
-}
-#togglebtn.is-active span {
-  background: #eebbc3;
-}
-#togglebtn.is-active span:nth-child(1) {
-  top: 50%;
-  transform: rotate(-45deg);
-}
-#togglebtn.is-active span:nth-child(2) {
-  top: 50%;
-  transform: rotate(45deg);
-}
-
-#menu-overlay.is-active {
-  visibility: visible;
-}
 
 #menu-overlay {
   font-family: var(--secondery-font);
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #8c98d3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
+  justify-content: end;
   transition: 0.5s;
+  padding: 20px;
+  display: flex;
 }
 #menu-overlay ul {
   position: relative;
 }
 #menu-overlay ul li {
-  position: relative;
-  display: inline-block;
-  text-align: center;
   list-style: none;
+  display: inline;
 }
 #menu-overlay ul li a {
   position: relative;
   text-decoration: none;
-  font-size: 45px;
-  padding: 0px 10px;
+  font-size: 16px;
+  padding: 0px 20px;
   color: var(--secondery-color);
   font-weight: 700;
   text-transform: uppercase;
-  display: inline-block;
 }
 #menu-overlay ul li a:hover {
-  color: var(--accent-color);
+  color: var(--primery-color);
+}
+.active {
+  color: var(--primery-color);
 }
 /*#endregion*/
 /*#region Hero*/
@@ -299,6 +254,11 @@ footer .contact-box a:hover {
   font-size: 48px;
   text-align: center;
 }
+.content {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 .content p {
   color: var(--main-color);
   font-size: 24px;
@@ -327,6 +287,7 @@ footer .contact-box a:hover {
 }
 .project-container {
   padding: 50px;
+  margin: 0;
 }
 .project-container h1 {
   color: var(--secondery-color);
@@ -407,7 +368,7 @@ footer .contact-box a:hover {
     font-size: 45px;
   }
   #menu-overlay ul li {
-    display: block;
+    display: inline;
   }
   .hero {
     padding: 188px 18px;
@@ -505,12 +466,6 @@ footer .contact-box a:hover {
   .image-content {
     justify-content: center;
     margin: 15px;
-  }
-  #menu-overlay ul {
-    padding: 0;
-  }
-  #menu-overlay ul li {
-    display: block;
   }
   .content {
     padding: 0 15px;
