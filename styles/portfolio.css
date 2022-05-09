@@ -135,7 +135,17 @@ footer .contact-box a:hover {
 
 /*#endregion main*/
 /*#region about me*/
+.about-link {
+  text-decoration: none;
+  color: #ee6c4d;
+}
+.skills {
+  color: #ee6c4d;
+}
 
+.about-link:hover {
+  color: var(--secondery-color);
+}
 .about-me {
   margin-top: 20px;
 }
@@ -337,7 +347,6 @@ footer .contact-box a:hover {
 }
 .contact-information {
   padding: 20px;
-
   margin-top: -212px;
   line-height: 3rem;
   font-size: 36px;
@@ -345,6 +354,9 @@ footer .contact-box a:hover {
 .contact-information a {
   color: var(--secondery-color);
   text-decoration: none;
+}
+.contact-information a:hover {
+  color: #ee6c4d;
 }
 /*#endregion*/
 
