@@ -68,34 +68,94 @@ footer .contact-box a:hover {
 }
 /*#region navigation*/
 
-#menu-overlay {
-  font-family: var(--secondery-font);
-  justify-content: end;
-  transition: 0.5s;
-  padding: 20px;
+#togglebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
   display: flex;
+  width: 20px;
+  height: 20px;
+}
+#togglebtn span {
+  width: 35px;
+  height: 2px;
+  background-color: #eebbc3;
+  position: absolute;
+  display: flex;
+  transition: 0.3s;
+}
+#togglebtn span:nth-child(1) {
+  top: 20%;
+}
+#togglebtn span:nth-child(2) {
+  top: 80%;
+}
+#togglebtn.is-active span {
+  background: #eebbc3;
+}
+#togglebtn.is-active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+#togglebtn.is-active span:nth-child(2) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+#menu-overlay.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #797e99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
 }
 #menu-overlay ul {
   position: relative;
 }
 #menu-overlay ul li {
+  position: relative;
+  display: inline-block;
+  text-align: center;
   list-style: none;
-  display: inline;
 }
 #menu-overlay ul li a {
   position: relative;
   text-decoration: none;
-  font-size: 16px;
-  padding: 0px 20px;
+  font-size: 45px;
+  padding: 0px 10px;
   color: var(--secondery-color);
   font-weight: 700;
   text-transform: uppercase;
+  display: inline-block;
 }
 #menu-overlay ul li a:hover {
-  color: var(--primery-color);
+  color: var(--accent-color);
 }
-.active {
-  color: var(--primery-color);
+
+.brand-custom {
+  color: var(--secondery-color);
+  text-decoration: none;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+.brand-custom:hover {
+  color: var(--secondery-color);
+}
+.navbar-custom {
+  position: relative;
+  top: 15px;
 }
 /*#endregion*/
 /*#region Hero*/
@@ -261,7 +321,7 @@ footer .contact-box a:hover {
 .content-container h1 {
   color: var(--secondery-color);
   font-family: var(--secondery-font);
-  font-size: 48px;
+  font-size: 32px;
   text-align: center;
 }
 .content {
@@ -269,12 +329,7 @@ footer .contact-box a:hover {
   position: sticky;
   top: 0;
 }
-.content p {
-  color: var(--main-color);
-  font-size: 24px;
-  text-align: center;
-  font-weight: normal;
-}
+
 .contact-button {
   border: solid 2px var(--primery-color);
   color: var(--primery-color);
@@ -374,6 +429,7 @@ footer .contact-box a:hover {
     line-height: 18px;
   }
   #menu-overlay ul {
+    display: grid;
     padding: 0;
   }
   #menu-overlay ul li {
@@ -441,7 +497,6 @@ footer .contact-box a:hover {
     aspect-ratio: 1/1;
   }
   .profile-img {
-    padding: 50px;
     margin-top: 0;
   }
   .content {
@@ -472,13 +527,17 @@ footer .contact-box a:hover {
   }
 }
 @media (max-width: 991px) {
+  #menu-overlay ul {
+    display: grid;
+    padding: 0;
+  }
   .image-content {
     justify-content: center;
     margin: 15px;
   }
   .content {
     padding: 0 15px;
-    margin-top: 60px;
+    margin-bottom: 10px;
   }
   .project-container {
     padding: 10px 30px;
