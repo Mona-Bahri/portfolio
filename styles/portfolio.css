@@ -237,11 +237,11 @@ footer .contact-box a:hover {
   color: var(--secondery-color);
   text-decoration: none;
   font-size: 18px;
-  transition: 0.3s ease-in-out;
+  transition: 100ms ease-in-out;
   display: block;
 }
 .about-me-link:hover {
-  color: var(--secondery-color);
+  color: #ee6c4d;
 }
 /*#endregion about me*/
 /*#region projects*/
